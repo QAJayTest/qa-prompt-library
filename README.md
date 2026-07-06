@@ -1,6 +1,25 @@
 # QA Prompt Library 🧪
 
-A comprehensive collection of AI prompts designed to enhance Quality Assurance workflows across manual testing, automation, and AI-assisted testing scenarios.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/contribution-guidelines.md)
+[![Prompts](https://img.shields.io/badge/Prompts-100+-blue.svg)](PROMPT_INDEX.md)
+
+A comprehensive, standardized collection of AI prompts designed to enhance Quality Assurance workflows across manual testing, automation, and AI-assisted testing scenarios.
+
+## 🚀 Quick Start
+
+**New to the library?** Start here:
+1. Read the [Quick Start Guide](QUICK_START.md) - 5-minute introduction
+2. Browse the [Prompt Index](PROMPT_INDEX.md) to find what you need
+3. Check out [Quick Start Examples](#-quick-start-examples)
+4. Read the [Prompt Writing Guide](docs/prompt-writing-guide.md) to understand best practices
+5. Use our [Templates](templates/) to create your own prompts
+
+**Looking for something specific?**
+- 🔍 [Search by Tag](docs/tagging-system.md)
+- 📋 [Browse by Category](#-structure)
+- 🎯 [Filter by Difficulty](PROMPT_INDEX.md)
+- 🤖 [Cursor AI Roles](#cursor-ai-roles)
 
 ## 📚 Overview
 
@@ -8,90 +27,180 @@ This library provides ready-to-use prompts for QA professionals to leverage AI t
 
 ## 🗂️ Structure
 
-### Manual QA
-- **Test Case Creation**: Prompts for functional, regression, and edge case test scenarios
-- **Bug Reporting**: Templates for defect descriptions, reproduction steps, and root cause analysis
-- **Test Planning**: Strategic prompts for test plans, strategies, and risk analysis
-- **Checklists**: Comprehensive testing checklists for UI, API, and mobile applications
+> **💡 Tip**: Each category has its own README with detailed information. Click the links below to explore!
 
-### Automation QA
-- **Test Script Generation**: Framework-specific prompts (Selenium, Playwright, Cypress)
-- **API Automation**: Prompts for Postman, REST Assured, and Newman
-- **Framework Design**: Architecture and design pattern prompts
-- **CI/CD Integration**: Pipeline and automation workflow prompts
-- **Contract Testing**: Consumer-driven contracts (Pact, Spring Cloud Contract)
-- **Load Testing**: Performance testing with JMeter, Gatling, and K6
-- **Test Reporting**: Extent Reports, Allure, and custom reporting solutions
-- **Parallel Execution**: TestNG parallel, Selenium Grid, cloud execution strategies
-- **Database Testing**: SQL, NoSQL, and data migration testing prompts
-- **Security Testing**: OWASP Top 10, penetration testing, and vulnerability assessment
-- **Accessibility Testing**: WCAG compliance, screen reader, and keyboard navigation testing
-- **Cloud Testing**: AWS, Azure, and GCP testing strategies and scenarios
+### [Manual QA](manual-qa/)
+Prompts for manual testing activities.
 
-### AI-Assisted QA
-- Test data generation
-- Risk analysis and prediction
-- Exploratory testing guidance
-- Release quality assessment
-- **AI-Powered Test Maintenance**: Self-healing locators and auto-refactoring
-- **Self-Healing Test Scripts**: Visual AI and DOM pattern learning
-- **Intelligent Test Selection**: ML-based risk analysis and predictive failure detection
-- **Defect Prediction Models**: Code quality metrics and bug pattern recognition
+- **[Test Case Creation](manual-qa/test-case-creation/)**: Functional, regression, and edge case test scenarios
+- **[Bug Reporting](manual-qa/bug-reporting/)**: Templates for defect descriptions, reproduction steps, and root cause analysis
+- **[Test Planning](manual-qa/test-planning/)**: Strategic prompts for test plans, strategies, and risk analysis
+- **[Checklists](manual-qa/checklist-prompts/)**: Comprehensive testing checklists for UI, API, and mobile applications
+- **[Exploratory Testing](manual-qa/exploratory-testing/exploratory-testing-prompts.md)**: AI-guided exploratory testing strategies
+- **[Usability Testing](manual-qa/usability-testing/usability-testing-prompts.md)**: UX evaluation and user testing
 
-### Mobile Testing
-- **Test Scenarios**: Mobile-specific test scenarios (app lifecycle, permissions, gestures, network)
-- **Automation Prompts**: Appium test script generation and mobile automation frameworks
-- **Checklists**: Comprehensive mobile testing checklists (pre-release, security, performance)
-- **Cross-Platform Testing**: iOS and Android testing strategies
+### [Automation QA](automation-qa/)
+Comprehensive automation prompts for all testing needs.
 
-### Cursor AI Roles
+**Web Automation**:
+- **[Selenium](automation-qa/web-automation/selenium/)**, **[Playwright](automation-qa/web-automation/playwright/)**, **[Cypress](automation-qa/web-automation/cypress/)** - Modern web automation frameworks
 
-**Web Automation:**
-- **Selenium Role**: Expert guidance for Selenium WebDriver automation
-- **Playwright Role**: Modern web testing with Playwright
-- **Cypress Role**: JavaScript-based E2E testing expertise
+**API Testing**:
+- **[Beginner Guide](automation-qa/api-automation/api-testing-beginner.md)**, **[Advanced Patterns](automation-qa/api-automation/api-testing-advanced.md)** - API automation and validation
 
-**Mobile Testing:**
-- **Appium Role**: Mobile automation with Appium for iOS and Android
-- **Mobile Testing Role**: Mobile-specific testing strategies and scenarios
-- **Mobile Performance Role**: Mobile app performance testing and optimization
+**Specialized Testing**:
+- **[Contract Testing](automation-qa/contract-testing/)**: Pact, Spring Cloud Contract
+- **[Load Testing](automation-qa/load-testing/)**: JMeter, Gatling, K6
+- **[Security Testing](automation-qa/security-testing/)**: OWASP Top 10, penetration testing
+- **[Accessibility Testing](automation-qa/accessibility-testing/)**: WCAG compliance
+- **[Database Testing](automation-qa/database-testing/)**: SQL, NoSQL validation
+- **[Cloud Testing](automation-qa/cloud-testing/)**: AWS, Azure, GCP
 
-**Testing Frameworks:**
-- **TestNG Role**: TestNG framework expert for Java testing
-- **JUnit Role**: JUnit 5 specialist for unit and integration testing
-- **pytest Role**: Python testing framework expertise
+**Framework & CI/CD**:
+- **[Framework Design](automation-qa/framework-design/)**: Architecture and design patterns
+- **[CI/CD Integration](automation-qa/ci-cd/)**: Jenkins, GitHub Actions, GitLab CI
+- **[Test Reporting](automation-qa/test-reporting/)**: Extent Reports, Allure
+- **[Parallel Execution](automation-qa/parallel-execution/)**: TestNG, Selenium Grid, cloud execution
 
-**API Testing:**
-- **REST Assured Role**: Java-based REST API testing
-- **Karate DSL Role**: BDD-style API testing with Karate
-- **GraphQL Role**: GraphQL API testing specialist
+### [AI-Assisted QA](ai-assisted-qa/)
+Leverage AI and ML for enhanced testing.
 
-**Design Patterns:**
-- **POM Role**: Page Object Model design patterns
-- **BDD Role**: Behavior-Driven Development with Gherkin
-- **Data-Driven Role**: Data-driven testing strategies
-- **Framework Design Role**: Complete framework architecture guidance
+- **[Test Data Generation](ai-assisted-qa/test-data-generation-prompts.md)**: Realistic, diverse test data using AI
+- **[Risk Analysis](ai-assisted-qa/risk-analysis-prompts.md)**: AI-powered risk assessment and prediction
+- **[Exploratory Testing](ai-assisted-qa/exploratory-testing-prompts.md)**: AI-guided exploratory testing strategies
+- **[Release Quality Assessment](ai-assisted-qa/release-quality-prompts.md)**: Assess release readiness
+- **[AI-Powered Test Maintenance](ai-assisted-qa/test-maintenance-prompts.md)**: Self-healing locators and auto-refactoring
+- **[Intelligent Test Selection](ai-assisted-qa/intelligent-test-selection.md)**: ML-based risk analysis and predictive failure detection
+- **[Defect Prediction Models](ai-assisted-qa/defect-prediction.md)**: Code quality metrics and bug pattern recognition
 
-**Infrastructure:**
-- **Docker Testing Role**: Container-based testing with Testcontainers
-- **Kubernetes Testing Role**: Cloud-native application testing
+### [Mobile Testing](mobile-testing/)
+Mobile-specific testing prompts.
+
+- **Test Scenarios**: App lifecycle, permissions, gestures, network conditions
+- **Automation**: Appium test script generation and mobile frameworks
+- **Checklists**: Pre-release, security, performance checklists
+- **Cross-Platform**: iOS and Android testing strategies
+
+### [Specialized Testing](specialized-testing/)
+Testing for emerging and specialized domains.
+
+- **[Blockchain Testing](specialized-testing/blockchain-testing/web3-testing-prompts.md)**: Web3, smart contracts, DeFi testing
+- **IoT Testing**: Device connectivity, sensor validation (Coming Soon)
+- **ML Model Testing**: Model accuracy, bias detection (Coming Soon)
+- **Game Testing**: Gameplay, performance, multiplayer (Coming Soon)
+
+### [Cursor AI Roles](cursor-ai/)
+Expert AI roles for framework-specific guidance in your IDE.
+
+- **Web Frameworks**: [Selenium](cursor-ai/web-frameworks/selenium-role.md), [Playwright](cursor-ai/web-frameworks/playwright-role.md), [Cypress](cursor-ai/web-frameworks/cypress-role.md)
+- **Mobile Frameworks**: [Appium](cursor-ai/mobile-frameworks/appium-role.md), [Mobile Testing](cursor-ai/mobile-frameworks/mobile-testing-role.md), [Mobile Performance](cursor-ai/mobile-frameworks/mobile-performance-role.md)
+- **Testing Frameworks**: [TestNG](cursor-ai/testing-frameworks/testng-role.md), [JUnit](cursor-ai/testing-frameworks/junit-role.md), [pytest](cursor-ai/testing-frameworks/pytest-role.md)
+- **API Frameworks**: [REST Assured](cursor-ai/api-frameworks/rest-assured-role.md), [Karate DSL](cursor-ai/api-frameworks/karate-dsl-role.md), [GraphQL](cursor-ai/api-frameworks/graphql-testing-role.md)
+- **Design Patterns**: [POM](cursor-ai/design-patterns/pom-role.md), [BDD](cursor-ai/design-patterns/bdd-role.md), [Data-Driven](cursor-ai/design-patterns/data-driven-role.md), [Framework Design](cursor-ai/design-patterns/framework-design-role.md)
+- **Specialized**: [Security](cursor-ai/specialized/security-testing-role.md), [Performance](cursor-ai/specialized/performance-testing-role.md), [Accessibility](cursor-ai/specialized/accessibility-testing-role.md)
+- **Infrastructure**: [Docker](cursor-ai/infrastructure/docker-testing-role.md), [Kubernetes](cursor-ai/infrastructure/kubernetes-testing-role.md)
+
+### [Templates](templates/)
+Standardized templates for creating new prompts.
+
+- **[Prompt Template](templates/prompt-template.md)**: Standard structure for all prompts
+- **[Role Template](templates/role-template.md)**: Template for Cursor AI roles
+- **[Usage Guide](templates/README.md)**: How to use the templates
+
+### [Documentation](docs/)
+Comprehensive guides and references.
+
+- **[Prompt Writing Guide](docs/prompt-writing-guide.md)**: Learn to write effective prompts
+- **[Tagging System](docs/tagging-system.md)**: Complete tag reference
+- **[Contribution Guidelines](docs/contribution-guidelines.md)**: How to contribute
+- **[Changelog](docs/changelog.md)**: Version history
+- **[Glossary](docs/glossary.md)**: Testing terminology
+- **[Best Practices](docs/best-practices.md)**: QA testing best practices
+
+### [Workflows](workflows/)
+Practical workflow guides for real-world testing scenarios.
+
+- **[Daily Testing Workflow](workflows/daily-testing-workflow.md)**: Day-to-day testing activities
+- **[Sprint Testing Workflow](workflows/sprint-testing-workflow.md)**: 2-week sprint cycle guide
+- **[Release Testing Workflow](workflows/release-testing-workflow.md)**: Production release process
+
+### AI Tool Integration Guides
+Learn how to use this library with popular AI tools.
+
+- **[Using with ChatGPT](docs/using-with-chatgpt.md)**: Complete ChatGPT integration guide
+- **[Using with Cursor AI](docs/using-with-cursor.md)**: Cursor AI roles and usage
+- **[Using with GitHub Copilot](docs/using-with-copilot.md)**: Copilot integration patterns
 
 
-## 🚀 Quick Start
+## 🚀 Quick Start Examples
 
-1. Browse the relevant category for your testing need
-2. Copy the prompt template
-3. Customize with your specific context
-4. Use with your preferred AI tool
-5. Refine results as needed
+### Example 1: Generate Selenium Test Code
+1. Open [Selenium Role](cursor-ai/web-frameworks/selenium-role.md) in Cursor AI
+2. Describe your test scenario
+3. Get production-ready Selenium code with best practices
 
-## 💡 Usage Examples
+### Example 2: Create API Test Cases
+1. Browse [API Testing Beginner](automation-qa/api-automation/api-testing-beginner.md)
+2. Fill in your API details
+3. Generate comprehensive test cases and collections
 
-See the `examples/` directory for real-world applications of these prompts.
+### Example 3: Plan Sprint Testing
+1. Use [Test Planning Prompts](manual-qa/test-planning/)
+2. Input sprint goals and user stories
+3. Get complete test strategy and estimates
+
+## 📖 How to Use
+
+1. **Find Your Prompt**
+   - Browse [PROMPT_INDEX.md](PROMPT_INDEX.md) for complete catalog
+   - Use category READMEs for focused navigation
+   - Search by tags using the [Tagging System](docs/tagging-system.md)
+
+2. **Customize the Prompt**
+   - Copy the prompt template from [Templates](templates/prompt-template.md)
+   - Replace [PLACEHOLDERS] with your specific details
+   - Add any additional context needed
+
+3. **Use with AI Tools**
+   - ChatGPT, Claude, Gemini for general prompts
+   - GitHub Copilot, Cursor AI for code generation
+   - Paste and run in your preferred AI tool
+
+4. **Refine and Validate**
+   - Review AI-generated output
+   - Refine prompts for better results
+   - Always validate before production use
+
+## 💡 Featured Prompts
+
+- 🌟 [Functional Test Cases](manual-qa/test-case-creation/functional-prompts.md) - Most popular
+- 🚀 [Selenium Expert Role](cursor-ai/web-frameworks/selenium-role.md) - Highly rated
+- 🔥 [API Testing Advanced](automation-qa/api-automation/api-testing-advanced.md) - Frequently used
+- ⚡ [AI Test Data Generation](ai-assisted-qa/test-data-generation-prompts.md) - Trending
+
+## 📚 Resources
+
+### For Users
+- **[Prompt Index](PROMPT_INDEX.md)** - Complete searchable catalog
+- **[Prompt Writing Guide](docs/prompt-writing-guide.md)** - Write effective prompts
+- **[Tagging System](docs/tagging-system.md)** - Find prompts by tags
+- **[Examples](examples/)** - Real-world usage examples
+
+### For Contributors
+- **[Contribution Guidelines](docs/contribution-guidelines.md)** - How to contribute
+- **[Templates](templates/)** - Standardized prompt templates
+- **[Changelog](docs/changelog.md)** - Recent updates
 
 ## 🤝 Contributing
 
-Please read [contribution guidelines](docs/contribution-guidelines.md) before submitting prompts.
+**We welcome contributions!** 🎉
+
+1. Read the [Contribution Guidelines](docs/contribution-guidelines.md)
+2. Use our [Templates](templates/) for new prompts
+3. Follow the [Prompt Writing Guide](docs/prompt-writing-guide.md)
+4. Submit a pull request
+
+See [CONTRIBUTING.md](docs/contribution-guidelines.md) for detailed instructions.
 
 ## 📝 License
 
